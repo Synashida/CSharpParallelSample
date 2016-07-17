@@ -6,6 +6,7 @@
 
 記法はこんな感じです。
 Parallel.For(スレッドの開始ID, スレッドの終了ID(実際には終了ID -1), スレッドカウンタ => { スレッド内処理 });
+シングルスレッドに分割するよりは管理が楽にできるかと思います。
 
 ```
         private void ParallelNormalLoop(int threadCount)
